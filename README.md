@@ -3,7 +3,7 @@
 > **Data-driven marketing optimization framework that analyzes ROAS, profitability, and campaign efficiency to identify underperforming spend. Built with Python and SQL, the reallocation engine simulates a $1.2M profit optimization and improves ROAS from 4.88X to 5.21X.**
 
 ## 📌 Executive Summary
-This project identifies capital-at-risk within a global digital advertising portfolio ($54M Revenue / 4.88X baseline ROAS) and algorithmically reallocates day by day wasted spend to high-performing assets using strict financial guardrails. By employing a micro-simulation engine and ANOVA sensitivity testing, the final model demonstrates significant profit optimization while strictly decreasing total capital exposure.
+This project identifies capital-at-risk within a global digital advertising portfolio ($54M Revenue / 4.88X baseline ROAS) and algorithmically reallocates day-by-day wasted spend to high-performing assets using strict financial guardrails. By employing a micro-simulation engine and ANOVA sensitivity testing, the final model demonstrates significant profit optimization while strictly decreasing total capital exposure.
 
 ## 🛠️ The Tech Stack & Data Pipeline
 This project features a complete end-to-end data architecture and analysis, transitioning raw campaign data into a production-ready risk management engine:
@@ -23,11 +23,11 @@ This project features a complete end-to-end data architecture and analysis, tran
 * **Final Deliverables:** The finalized Python simulation outputs and optimized daily reallocation ledgers were exported as clean CSVs.
 * **Dashboarding:** These datasets were ingested into Power BI to construct the final interactive executive dashboard, visually illustrating the financial shift from the 4.88X baseline to the optimized 5.21X ROAS.
 
-## 📈 Executive Dashboard BI
+## 📈 Executive Dashboard
 ![Power BI Executive Dashboard](Captura%20de%20pantalla%202026-03-02%20084516.png)
 
 ## 🎯 Risk Management & Key Findings
-To uncover hidden daily inefficiencies across Google Ads, Meta Ads, and TikTok Ads, this project quantified variance and risk at a granular level:
+To uncover hidden daily inefficiencies across Google Ads, Meta Ads, and TikTok Ads, this project quantified variance and risk at a granular level to answer the core question: *Does a highly profitable environment still hide capital inefficiencies and risk?*
 * **CPA Profitability Thresholds:** Identified the exact Cost Per Acquisition (CPA) boundaries for each platform where campaigns cross from profitable returns into negative expected value.
 * **Probability of Loss:** Modeled the statistical probability of a campaign losing capital under specific daily conditions. By treating campaign variance as a measurable metric, the engine automatically cuts funding to channels that exceed acceptable risk limits.
 * **The Core Mechanism:** We demonstrate that top-of-funnel campaign efficiency (clicks, impressions, and CTR) remains stable, but rising CPAs push capital into negative-yield risk zones. The engine mitigates this by dynamically shifting budget to more cost-effective daily alternatives.
@@ -37,12 +37,18 @@ To uncover hidden daily inefficiencies across Google Ads, Meta Ads, and TikTok A
 ## ⚙️ Methodology & Engine Mechanics
 1. **Defensive Data Auditing:** Custom Python functions (`check_data_quality`) were built to differentiate between logical overlaps and technical duplicates, ensuring absolute data integrity before any financial models were applied.
 2. **ANOVA Sensitivity Testing:** Conducted statistical variance tests to ensure that the performance differences between channels were statistically significant, preventing the algorithm from chasing random noise.
-3. **Surgical Reallocation Algorithm:** Engineered a script that shifts capital away from mathematically inefficient campaigns into high-yield avenues. The algorithm is bounded by strict financial guardrails to prevent over-allocation and diminishing returns.
+3. **Anomaly Detection:** Identified 136 losing campaign-days across the dataset. Conducted a *Metric Variance: Baseline vs. Anomaly* statistical analysis, demonstrating that isolated spikes in bottom-of-funnel costs (CPA), rather than top-of-funnel engagement, were the primary drivers of negative ROI.
+4. **Surgical Reallocation Algorithm:** Engineered a script that shifts capital away from mathematically inefficient campaigns into high-yield avenues on the exact same day. The algorithm is bounded by strict financial guardrails to prevent over-allocation and diminishing returns.
 
 ## 📦 Key Outputs & Deliverables
-The Python engine programmatically generates clean data assets for downstream use:
-* `surgical_strategy_full_audit.csv`: The optimized daily reallocation ledger.
-* `vw_performance_metrics.csv`: The cleaned, validated baseline data ready for BI ingestion.
+The Python engine programmatically generates a suite of clean, analytical CSV datasets for downstream BI integration:
+* `vw_performance_metrics.csv`: The cleaned and validated baseline dataset.
+* `anova_results.csv`: Results from the statistical variance testing.
+* `136_losing_days.csv`: Isolated subset of mathematically inefficient campaign-days.
+* `metric_variance.csv`: Statistical comparison profiling baseline performance versus anomalies.
+* `cpa_threshold_sensitivity.csv`: Probability audit detailing platform-specific CPA risk boundaries.
+* `surgical_strategy_full_audit.csv`: The complete 3-Tier action plan detailing capital-at-risk and required adjustments.
+* `daily_reallocation_ledger.csv`: The final optimized reallocation engine output ready for BI ingestion.
 
 ## 📁 Repository Structure
 ```text
