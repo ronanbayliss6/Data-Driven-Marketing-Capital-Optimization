@@ -24,7 +24,7 @@ This project features a complete end-to-end data architecture and analysis, tran
 * **Dashboarding:** These datasets were ingested into Power BI to construct the final interactive executive dashboard, visually illustrating the financial shift from the 4.88X baseline to the optimized 5.21X ROAS.
 
 ## 📈 Executive Dashboard
-![Power BI Executive Dashboard](Captura%20de%20pantalla%202026-03-02%20084516.png)
+![Power BI Executive Dashboard](Dashboards/Executive Summary.png)
 
 ## 🎯 Risk Management & Key Findings
 To uncover hidden daily inefficiencies across Google Ads, Meta Ads, and TikTok Ads, this project quantified variance and risk at a granular level to answer the core question: *Does a highly profitable environment still hide capital inefficiencies and risk?*
