@@ -1,9 +1,9 @@
 # 📊 Data-Driven-Marketing-Capital-Optimization
 
-> **Data-driven marketing optimization framework that analyzes ROAS, profitability, and campaign efficiency to identify underperforming spend. Built with Python and SQL, the reallocation engine simulates a $1.2M profit optimization and improves ROAS from 4.88X to 5.21X.**
+> **Data-driven marketing optimization framework that analyzes ROAS, profitability, and campaign efficiency to identify capital at risk. Built with Python and SQL, the reallocation engine simulates a theorical $1.2M profit optimization and improves ROAS from 4.88X to 5.21X.**
 
 ## 📌 Executive Summary
-This project identifies capital-at-risk within a global digital advertising portfolio ($54M Revenue / 4.88X baseline ROAS) and algorithmically reallocates day-by-day wasted spend to high-performing assets using strict financial guardrails. By employing a micro-simulation engine and ANOVA sensitivity testing, the final model demonstrates significant profit optimization while strictly decreasing total capital exposure.
+This project identifies capital-at-risk within a global digital advertising portfolio ($54M Revenue / 4.88X baseline ROAS) and algorithmically reallocates day-by-day wasted spend to high-performing assets using strict financial guardrails. By employing a micro-simulation engine and ANOVA sensitivity testing to know what drives profit, the final model demonstrates significant profit optimization while strictly decreasing total capital exposure.
 
 ## 🛠️ The Tech Stack & Data Pipeline
 This project features a complete end-to-end data architecture and analysis, transitioning raw campaign data into a production-ready risk management engine:
