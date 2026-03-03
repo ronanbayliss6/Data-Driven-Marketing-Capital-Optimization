@@ -12,7 +12,7 @@ This project features a complete end-to-end data pipeline:
 * **Statistical Analysis:** Python (SciPy) for ANOVA testing to determine campaign sensitivity.
 * **Business Visualization:** Power BI (`Data Analytics Marketing.pbix`) for executive-level dashboarding.
 
-## 📈 Executive Dashboard
+## 📈 Executive Dashboard BI
 ![Power BI Executive Dashboard](Captura%20de%20pantalla%202026-03-02%20084516.png)
 
 ## 🎯 Risk Management & Key Findings
