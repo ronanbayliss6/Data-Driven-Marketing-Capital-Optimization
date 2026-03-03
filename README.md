@@ -32,7 +32,7 @@ To uncover hidden daily inefficiencies across Google Ads, Meta Ads, and TikTok A
 * **Probability of Loss:** Modeled the statistical probability of a campaign losing capital under specific daily conditions. By treating campaign variance as a measurable metric, the engine automatically cuts funding to channels that exceed acceptable risk limits.
 * **The Core Mechanism:** We demonstrate that top-of-funnel campaign efficiency (clicks, impressions, and CTR) remains stable, but rising CPAs push capital into negative-yield risk zones. The engine mitigates this by dynamically shifting budget to more cost-effective daily alternatives.
 
-![Power BI Risk Dashboard](Dashboards/Captura%20de%20pantalla%202026-03-02%20084537.png)
+![Power BI Risk Dashboard](Dashboards/Root Cause Analysis.png)
 
 ## ⚙️ Methodology & Engine Mechanics
 1. **Defensive Data Auditing:** Custom Python functions (`check_data_quality`) were built to differentiate between logical overlaps and technical duplicates, ensuring absolute data integrity before any financial models were applied.
