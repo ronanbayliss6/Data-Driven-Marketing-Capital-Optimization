@@ -3,7 +3,7 @@
 > **Data-driven marketing optimization framework that analyzes ROAS, profitability, and campaign efficiency to identify underperforming spend. Built with Python and SQL, the reallocation engine simulates a $1.2M profit optimization and improves ROAS from 4.88X to 5.21X.**
 
 ## 📌 Executive Summary
-This project identifies capital-at-risk within a global digital advertising portfolio ($54M Revenue / 4.88X baseline ROAS) and algorithmically reallocates wasted spend to high-performing assets using strict financial guardrails. By employing a micro-simulation engine and ANOVA sensitivity testing, the final model demonstrates significant profit optimization while strictly decreasing total capital exposure.
+This project identifies capital-at-risk within a global digital advertising portfolio ($54M Revenue / 4.88X baseline ROAS) and algorithmically reallocates day by day wasted spend to high-performing assets using strict financial guardrails. By employing a micro-simulation engine and ANOVA sensitivity testing, the final model demonstrates significant profit optimization while strictly decreasing total capital exposure.
 
 ## 🛠️ The Tech Stack & Pipeline
 This project features a complete end-to-end data pipeline:
