@@ -24,7 +24,7 @@ This project features a complete end-to-end data architecture and analysis, tran
 * **Dashboarding:** These datasets were ingested into Power BI to construct the final interactive executive dashboard, visually illustrating the financial shift from the 4.88X baseline to the optimized 5.21X ROAS.
 
 ## 📈 Executive Dashboard
-![Power BI Executive Dashboard](Dashboards/Executive Summary.png)
+![Power BI Executive Dashboard](Dashboards/Executive%20Summary.png)
 
 ## 🎯 Risk Management & Key Findings
 To uncover hidden daily inefficiencies across Google Ads, Meta Ads, and TikTok Ads, this project quantified variance and risk at a granular level to answer the core question: *Does a highly profitable environment still hide capital inefficiencies and risk?*
@@ -32,7 +32,8 @@ To uncover hidden daily inefficiencies across Google Ads, Meta Ads, and TikTok A
 * **Probability of Loss:** Modeled the statistical probability of a campaign losing capital under specific daily conditions. By treating campaign variance as a measurable metric, the engine automatically cuts funding to channels that exceed acceptable risk limits.
 * **The Core Mechanism:** We demonstrate that top-of-funnel campaign efficiency (clicks, impressions, and CTR) remains stable, but rising CPAs push capital into negative-yield risk zones. The engine mitigates this by dynamically shifting budget to more cost-effective daily alternatives.
 
-![Power BI Risk Dashboard](Dashboards/Root Cause Analysis.png)
+![Power BI Risk Dashboard](Dashboards/Root%20Cause%20Analysis.png)
+![Power BI Risk Dashboard](Dashboards/Daily%20Reallocation%20Engine.png)
 
 ## ⚙️ Methodology & Engine Mechanics
 1. **Defensive Data Auditing:** Custom Python functions (`check_data_quality`) were built to differentiate between logical overlaps and technical duplicates, ensuring absolute data integrity before any financial models were applied.
