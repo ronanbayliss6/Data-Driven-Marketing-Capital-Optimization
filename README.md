@@ -5,12 +5,23 @@
 ## 📌 Executive Summary
 This project identifies capital-at-risk within a global digital advertising portfolio ($54M Revenue / 4.88X baseline ROAS) and algorithmically reallocates day by day wasted spend to high-performing assets using strict financial guardrails. By employing a micro-simulation engine and ANOVA sensitivity testing, the final model demonstrates significant profit optimization while strictly decreasing total capital exposure.
 
-## 🛠️ The Tech Stack & Pipeline
-This project features a complete end-to-end data pipeline:
-* **Data Storage:** SQLite (`global_ad_ops_warehouse.db`) storing 1,800 global operational days.
-* **Data Extraction & Cleaning:** Python (Pandas, NumPy) to handle missing revenue columns, logical grain analysis, and data quality checks.
-* **Statistical Analysis:** Python (SciPy) for ANOVA testing to determine campaign sensitivity.
-* **Business Visualization:** Power BI (`Data Analytics Marketing.pbix`) for executive-level dashboarding.
+## 🛠️ The Tech Stack & Data Pipeline
+This project features a complete end-to-end data architecture and analysis, transitioning raw campaign data into a production-ready risk management engine:
+
+**1. Data Ingestion & SQL Transformation**
+* **The Raw Data:** Extracted the original `global_ads_performance_dataset`, consisting of 14 columns (date, platform, campaign_type, industry, country, impressions, clicks, CTR, CPC, ad_spend, conversions, CPA, revenue, ROAS) and 1,800 rows of individual campaigns.
+* **Data Cleaning (SQLite):** Imported the raw data into an SQLite relational database to perform rigorous data cleaning and schema enforcement:
+  * *DDL Schema Enforcement:* Created a Fact Table (`fct_ads_performance`) with strict data types and `CHECK` constraints to ensure business logic integrity (e.g., preventing mathematically impossible scenarios like `clicks > impressions`).
+  * *DML Migration & Standardization:* Sanitized categorical variables using `TRIM()` and migrated the data.
+  * *Analytics View Creation:* Engineered a `vw_performance_metrics` view to serve as a "Single Version of Truth." This layer calculates dynamic KPIs (Net Profit, Profit Margin, ROAS, CTR) using `NULLIF()` to safely prevent division-by-zero errors.
+
+**2. Python Statistical Engine**
+* **Advanced Analytics:** The cleaned SQL view was exported into Python (`marketing_budget_optimization_audit.ipynb`) for advanced statistical analysis.
+* **The Logic:** Utilizing Pandas and SciPy, the engine conducts defensive data auditing, variance analysis, and ANOVA sensitivity testing to isolate statistically significant performance drops. It then applies a Surgical Reallocation Algorithm to shift capital from inefficient campaigns into high-yield alternatives based on strict CPA guardrails.
+
+**3. Business Visualization (Power BI)**
+* **Final Deliverables:** The finalized Python simulation outputs and optimized daily reallocation ledgers were exported as clean CSVs.
+* **Dashboarding:** These datasets were ingested into Power BI to construct the final interactive executive dashboard, visually illustrating the financial shift from the 4.88X baseline to the optimized 5.21X ROAS.
 
 ## 📈 Executive Dashboard BI
 ![Power BI Executive Dashboard](Captura%20de%20pantalla%202026-03-02%20084516.png)
