@@ -1,7 +1,6 @@
 # 📊 Data-Driven Marketing Capital Optimization  
 
-> **Capital risk detection and dynamic budget reallocation engine built to optimize a $54M digital advertising portfolio.**  
-> Using statistical sensitivity analysis and controlled budget redistribution, this framework improves ROAS from **4.88X to 5.21X** while reducing capital exposure to inefficient CPA zones.  
+> **Capital risk detection and dynamic budget reallocation engine built to optimize a $54M digital advertising portfolio.** > Using statistical sensitivity analysis and controlled budget redistribution, this framework improves ROAS from **4.88X to 5.21X** while reducing capital exposure to inefficient CPA zones.  
 > **Simulated incremental impact: +$1.2M profit uplift with lower risk concentration.**
 
 ---
@@ -33,8 +32,7 @@ ANOVA sensitivity testing revealed:
   - CPC inflation  
   - Excessive ad spend allocation  
 
-**Conclusion:**  
-Campaigns do not fail due to engagement breakdown. They fail when acquisition costs cross statistically measurable risk thresholds.
+**Conclusion:** Campaigns do not fail due to engagement breakdown. They fail when acquisition costs cross statistically measurable risk thresholds.
 
 ---
 
@@ -45,12 +43,12 @@ The model identified clear probability-of-loss boundaries:
 | CPA Range | Probability of Loss |
 |-----------|--------------------|
 | < $100    | 4.2% |
-| $100–199  | 37% |
-| $200–250  | 70% |
+| $100–199  | 37.8% |
+| $200–250  | 73.7% |
 | > $250    | 100% |
 
 - 136 campaign-days were identified as negative-yield events.
-- ~$600K in capital exposure was classified as statistically inefficient deployment.
+- ~$820,366 in capital exposure was classified as statistically inefficient deployment.
 
 Instead of labeling this as “money lost,” the framework treats it as **capital deployed under high-risk conditions.**
 
@@ -66,13 +64,13 @@ A dynamic day-by-day budget redistribution model was engineered with strict fina
 - CPA > 250 → 100% withdrawal
 
 ## 🔹 Controlled Reinjection Mechanism
-- Capital is redistributed only to campaigns operating below the $100 CPA efficiency zone.
+- Capital is redistributed only to campaigns operating below the $100 CPA efficiency zone that exact day.
 - Reinjection capped at 20% of the receiving campaign’s existing spend (prevents saturation and algorithm instability).
 - Diminishing returns applied to incremental capital to avoid unrealistic scaling assumptions.
 
 ## 🔹 Capital Preservation Layer
 Not all withdrawn capital is redeployed.  
-~$500K is preserved instead of being forced into marginal environments.
+~$583,585 is preserved instead of being forced into marginal environments.
 
 ---
 
@@ -86,6 +84,12 @@ Not all withdrawn capital is redeployed.
 
 More important than the profit estimate is the structural shift:
 The portfolio transitions from reactive spending to statistically bounded capital allocation.
+
+## 📊 Executive & Risk Dashboards
+![Power BI Executive Dashboard](Dashboards/Executive%20Summary.png)
+
+![Power BI Risk Dashboard](Dashboards/Root%20Cause%20Analysis.png)
+![Power BI Risk Dashboard](Dashboards/Daily%20Reallocation%20Engine.png)
 
 ---
 
@@ -135,20 +139,5 @@ It is a capital discipline framework built for high-confidence decision-making.
 - `136_losing_days.csv`
 - `metric_variance.csv`
 - `cpa_threshold_sensitivity.csv`
-- `surgical_strategy_full_audit.csv`
-- `daily_reallocation_ledger.csv`
-
----
-
-# 🎯 Strategic Value Demonstrated
-
-- Risk-aware marketing analytics  
-- Statistical decision frameworks  
-- Capital allocation modeling  
-- End-to-end data ownership  
-- Executive-level translation of analytics into action  
-
----
-
-# 📁 Repository Structure
+- `surgical_strategy_full_audit.csv
 
