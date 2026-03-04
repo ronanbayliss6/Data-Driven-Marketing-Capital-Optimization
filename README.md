@@ -1,6 +1,7 @@
 # 📊 Data-Driven Marketing Capital Optimization  
 
-> **Capital risk detection and dynamic budget reallocation engine built to optimize a $54M digital advertising portfolio.** > Using statistical sensitivity analysis and controlled budget redistribution, this framework improves ROAS from **4.88X to 5.21X** while reducing capital exposure to inefficient CPA zones.  
+> **Capital risk detection and dynamic budget reallocation engine built to optimize a $54M digital advertising portfolio.**
+> Using statistical sensitivity analysis and controlled budget redistribution, this framework improves ROAS from **4.88X to 5.21X** while reducing capital exposure to inefficient CPA zones.  
 > **Simulated incremental impact: +$1.2M profit uplift with lower risk concentration.**
 
 ---
